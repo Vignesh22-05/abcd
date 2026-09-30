@@ -1,0 +1,115 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Beginner Learning Hub</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Beginner Learning Hub</h1>
+    <p>Learn HTML, CSS and JavaScript through simple lessons and quizzes.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="tabs">
+    <button class="tab active" onclick="showLesson(0)">
+      1. HTML
+    </button>
+
+    <button class="tab" onclick="showLesson(1)">
+      2. CSS
+    </button>
+
+    <button class="tab" onclick="showLesson(2)">
+      3. JavaScript
+    </button>
+  </nav>
+
+  <main class="content">
+
+    <!-- Progress -->
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="lesson">
+
+      <!-- Lesson -->
+      <section class="lesson-info">
+
+        <small id="lessonNumber">
+          Lesson 1 of 3
+        </small>
+
+        <h2 id="lessonTitle">
+          HTML: Build the Structure
+        </h2>
+
+        <p id="lessonText">
+          HTML is used to create the structure of a webpage.
+          You can use HTML to create headings, paragraphs,
+          buttons, links and other elements.
+        </p>
+
+        <div class="example-card">
+
+          <h3>Example</h3>
+
+          <pre><code id="exampleCode">&lt;h1&gt;My Website&lt;/h1&gt;
+&lt;p&gt;Hello, beginner!&lt;/p&gt;</code></pre>
+
+        </div>
+
+        <p class="tip">
+          <strong>Remember:</strong>
+          <span id="tip">
+              Think of HTML as the skeleton of a webpage.
+            </span>
+        </p>
+
+      </section>
+
+
+      <!-- Quiz -->
+      <section class="quiz">
+
+        <h3>Quick Check</h3>
+
+        <p id="question">
+          Which HTML element is commonly used for the main heading?
+        </p>
+
+        <div class="options" id="options"></div>
+
+        <div class="feedback" id="feedback"></div>
+
+        <button
+                class="next-btn"
+                id="nextButton"
+                onclick="nextLesson()"
+                disabled>
+          Next Lesson
+        </button>
+
+      </section>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
